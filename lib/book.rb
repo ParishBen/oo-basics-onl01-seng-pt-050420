@@ -5,7 +5,7 @@ class Book
 def title
   @title
  end
- define_properties(:author_name, :page_count, :genre)
+ attr_accessor :author_name, :page_count, :genre
  def turn_page
    @page_count+=1 
  end
